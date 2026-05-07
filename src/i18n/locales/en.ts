@@ -1,0 +1,67 @@
+export default {
+  header: {
+    subtitle: 'Quick command reference by technology',
+  },
+  theme: {
+    dark: 'Dark',
+    light: 'Light',
+  },
+  sidebar: {
+    search_placeholder: 'Search technology...',
+    home: 'Home',
+    no_results: 'No results',
+  },
+  toolbar: {
+    search_placeholder: 'Search command, description, example...',
+    category: 'Category',
+    use_case: 'Use case',
+    level: 'Level',
+    risk: 'Risk',
+    favorites: 'Favorites',
+    clear: 'Clear',
+    command: 'command',
+    commands: 'commands',
+    view_table: 'Table',
+    view_cards: 'Cards',
+  },
+  level: {
+    beginner: 'Basic',
+    intermediate: 'Medium',
+    advanced: 'Advanced',
+  },
+  risk: {
+    safe: 'Safe',
+    warning: 'Caution',
+    danger: 'Dangerous',
+  },
+  copy: {
+    copy: 'Copy',
+    copied: 'Copied!',
+  },
+  example: 'Example',
+  featured: {
+    title: 'Most used',
+    subtitle: 'Featured commands across all technologies',
+  },
+  table: {
+    command: 'Command',
+    description: 'Description',
+    category: 'Category',
+    use_case: 'Use case',
+    badges: 'Level / Risk',
+  },
+  empty: {
+    no_results_title: 'No results',
+    no_results_desc: 'No commands match the applied filters',
+    no_results_action: 'Clear filters',
+    no_commands_title: 'No commands',
+    no_commands_desc: 'This technology has no commands yet',
+    error_tech_title: 'Error loading technologies',
+    error_tech_desc: 'Check your data source configuration',
+    error_cmd_title: 'Error loading commands',
+    error_cmd_desc: 'Check your data source configuration',
+    not_found_title: 'Technology not found',
+    not_found_desc: 'The requested technology does not exist',
+  },
+  loading: 'Loading...',
+}

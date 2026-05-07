@@ -1,0 +1,67 @@
+export default {
+  header: {
+    subtitle: 'Consulta rápida de comandos por tecnología',
+  },
+  theme: {
+    dark: 'Oscuro',
+    light: 'Claro',
+  },
+  sidebar: {
+    search_placeholder: 'Buscar tecnología...',
+    home: 'Inicio',
+    no_results: 'Sin resultados',
+  },
+  toolbar: {
+    search_placeholder: 'Buscar comando, descripción, ejemplo...',
+    category: 'Categoría',
+    use_case: 'Caso de uso',
+    level: 'Nivel',
+    risk: 'Riesgo',
+    favorites: 'Favoritos',
+    clear: 'Limpiar',
+    command: 'comando',
+    commands: 'comandos',
+    view_table: 'Tabla',
+    view_cards: 'Tarjetas',
+  },
+  level: {
+    beginner: 'Básico',
+    intermediate: 'Medio',
+    advanced: 'Avanzado',
+  },
+  risk: {
+    safe: 'Seguro',
+    warning: 'Precaución',
+    danger: 'Peligroso',
+  },
+  copy: {
+    copy: 'Copiar',
+    copied: '¡Copiado!',
+  },
+  example: 'Ejemplo',
+  featured: {
+    title: 'Más usados',
+    subtitle: 'Comandos destacados de todas las tecnologías',
+  },
+  table: {
+    command: 'Comando',
+    description: 'Descripción',
+    category: 'Categoría',
+    use_case: 'Caso de uso',
+    badges: 'Nivel / Riesgo',
+  },
+  empty: {
+    no_results_title: 'Sin resultados',
+    no_results_desc: 'Ningún comando coincide con los filtros aplicados',
+    no_results_action: 'Limpiar filtros',
+    no_commands_title: 'Sin comandos',
+    no_commands_desc: 'Esta tecnología aún no tiene comandos',
+    error_tech_title: 'Error al cargar tecnologías',
+    error_tech_desc: 'Revisa la configuración de la fuente de datos',
+    error_cmd_title: 'Error al cargar comandos',
+    error_cmd_desc: 'Revisa la configuración de la fuente de datos',
+    not_found_title: 'Tecnología no encontrada',
+    not_found_desc: 'La tecnología solicitada no existe',
+  },
+  loading: 'Cargando...',
+}
