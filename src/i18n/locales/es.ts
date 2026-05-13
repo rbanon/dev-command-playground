@@ -10,6 +10,20 @@ export default {
     search_placeholder: 'Buscar tecnología...',
     home: 'Inicio',
     no_results: 'Sin resultados',
+    sort_asc: 'A → Z',
+    sort_desc: 'Z → A',
+    collapse_all: 'Contraer todo',
+    expand_all: 'Expandir todo',
+    categories: {
+      version_control: 'Control de versiones',
+      shell_cli: 'Shell y CLI',
+      languages: 'Lenguajes',
+      infrastructure: 'Infraestructura',
+      nodejs_packages: 'Paquetes Node.js',
+      databases: 'Bases de datos',
+      frontend: 'Frontend',
+      ai: 'IA',
+    },
   },
   toolbar: {
     search_placeholder: 'Buscar comando, descripción, ejemplo...',
@@ -64,4 +78,8 @@ export default {
     not_found_desc: 'La tecnología solicitada no existe',
   },
   loading: 'Cargando...',
+  footer: {
+    builtBy: 'Creado por',
+    author: 'Rafael Bañon',
+  },
 }

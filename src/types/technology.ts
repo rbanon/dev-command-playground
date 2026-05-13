@@ -6,4 +6,5 @@ export interface Technology {
   icon: string | null
   sort_order: number
   is_visible: boolean
+  category: string
 }

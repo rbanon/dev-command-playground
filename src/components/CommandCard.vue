@@ -5,7 +5,7 @@
       <code class="card__command">{{ cmd.command }}</code>
     </div>
 
-    <p class="card__desc">{{ cmd.description }}</p>
+    <p class="card__desc">{{ describe(cmd) }}</p>
 
     <div v-if="cmd.example" class="card__example">
       <span class="card__example-label">{{ t('example') }}</span>
@@ -36,8 +36,10 @@
 import { useI18n } from 'vue-i18n'
 import CopyButton from '@/components/CopyButton.vue'
 import type { Command } from '@/types/command'
+import { useCommandDescription } from '@/composables/useCommandDescription'
 
 const { t } = useI18n()
+const describe = useCommandDescription()
 
 defineProps<{ cmd: Command }>()
 </script>

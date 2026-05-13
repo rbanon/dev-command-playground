@@ -20,7 +20,7 @@
           <code class="featured-card__command">{{ cmd.command }}</code>
           <CopyButton :text="cmd.command" size="sm" />
         </div>
-        <p class="featured-card__desc">{{ cmd.description }}</p>
+        <p class="featured-card__desc">{{ describe(cmd) }}</p>
         <div class="featured-card__badges">
           <span class="badge badge--category">{{ cmd.category }}</span>
           <span v-if="cmd.risk_level" :class="['badge', `badge--risk-${cmd.risk_level}`]">
@@ -35,11 +35,13 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { useFeaturedCommands } from '@/composables/useCommands'
+import { useCommandDescription } from '@/composables/useCommandDescription'
 import CopyButton from '@/components/CopyButton.vue'
 import LoadingState from '@/components/LoadingState.vue'
 import EmptyState from '@/components/EmptyState.vue'
 
 const { t } = useI18n()
+const describe = useCommandDescription()
 const { data: commands, isLoading, isError } = useFeaturedCommands()
 </script>
 

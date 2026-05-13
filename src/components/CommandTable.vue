@@ -21,7 +21,7 @@
               <CopyButton :text="cmd.command" size="sm" />
               <code class="cmd-code">{{ cmd.command }}</code>
             </td>
-            <td class="cmd-row__desc">{{ cmd.description }}</td>
+            <td class="cmd-row__desc">{{ describe(cmd) }}</td>
             <td class="cmd-row__meta">
               <span class="badge badge--category">{{ cmd.category }}</span>
             </td>
@@ -60,8 +60,10 @@ import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import CopyButton from '@/components/CopyButton.vue'
 import type { Command } from '@/types/command'
+import { useCommandDescription } from '@/composables/useCommandDescription'
 
 const { t } = useI18n()
+const describe = useCommandDescription()
 
 defineProps<{ commands: Command[] }>()
 

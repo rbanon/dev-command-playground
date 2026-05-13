@@ -84,7 +84,7 @@ const slug = computed(() => route.params.slug as string)
 const tech = computed(() => technologies.find((t) => t.slug === slug.value) ?? null)
 const techId = computed(() => tech.value?.id ?? null)
 
-const viewMode = ref<'table' | 'cards'>('table')
+const viewMode = ref<'table' | 'cards'>(window.innerWidth <= 1024 ? 'cards' : 'table')
 const { data: rawCommands, isLoading, isError } = useCommands(techId)
 
 const {
@@ -132,7 +132,7 @@ watch(slug, () => clearFilters())
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
     gap: 0.75rem;
     padding: 1rem;
   }

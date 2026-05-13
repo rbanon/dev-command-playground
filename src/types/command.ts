@@ -14,4 +14,5 @@ export interface Command {
   is_featured: boolean
   sort_order: number
   created_at: string
+  description_en?: string
 }

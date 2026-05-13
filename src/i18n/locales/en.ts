@@ -1,4 +1,7 @@
+import commandDescriptions from '../commands/en'
+
 export default {
+  commands: commandDescriptions,
   header: {
     subtitle: 'Quick command reference by technology',
   },
@@ -10,6 +13,20 @@ export default {
     search_placeholder: 'Search technology...',
     home: 'Home',
     no_results: 'No results',
+    sort_asc: 'A → Z',
+    sort_desc: 'Z → A',
+    collapse_all: 'Collapse all',
+    expand_all: 'Expand all',
+    categories: {
+      version_control: 'Version Control',
+      shell_cli: 'Shell & CLI',
+      languages: 'Languages',
+      infrastructure: 'Infrastructure',
+      nodejs_packages: 'Node.js Packages',
+      databases: 'Databases',
+      frontend: 'Frontend',
+      ai: 'AI',
+    },
   },
   toolbar: {
     search_placeholder: 'Search command, description, example...',
@@ -64,4 +81,8 @@ export default {
     not_found_desc: 'The requested technology does not exist',
   },
   loading: 'Loading...',
+  footer: {
+    builtBy: 'Built by',
+    author: 'Rafael Bañon',
+  },
 }
