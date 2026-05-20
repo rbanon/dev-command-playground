@@ -3,7 +3,7 @@
     <template v-if="tech">
       <div class="tech-view__header">
         <h2 class="tech-view__name">{{ tech.name }}</h2>
-        <p class="tech-view__desc">{{ tech.short_description }}</p>
+        <p class="tech-view__desc">{{ locale === 'en' ? (tech.short_description_en ?? tech.short_description) : tech.short_description }}</p>
       </div>
 
       <CommandToolbar
@@ -77,7 +77,7 @@ import CommandCard from '@/components/CommandCard.vue'
 import LoadingState from '@/components/LoadingState.vue'
 import EmptyState from '@/components/EmptyState.vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const route = useRoute()
 
 const slug = computed(() => route.params.slug as string)

@@ -3,6 +3,7 @@ export interface Technology {
   slug: string
   name: string
   short_description: string
+  short_description_en?: string
   icon: string | null
   sort_order: number
   is_visible: boolean
